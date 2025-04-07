@@ -54,5 +54,8 @@
     "parcel": "^2.7.0",
     "parcel-namer-struct": "^1.0.0",
     "posthtml-beautify": "^0.7.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.5"
   }
 }

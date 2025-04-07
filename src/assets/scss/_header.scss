@@ -1,0 +1,42 @@
+@font-face { 
+    font-family: "Bebas Neue Cyrillic"; 
+    src: url("/src/assets/fonts/Bebas_Neue_Cyrillic.ttf") format("truetype"); 
+  } 
+  @font-face { 
+    font-family: "Rubik"; 
+    src: url("/src/assets/fonts/Rubik.ttf") format("truetype"); 
+  } 
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 16px;
+    align-items: center;
+}
+.navigation{
+    &__menu{
+        display: flex;
+        &-item{
+            a{
+                padding-left: 20px;
+                padding-left: 20px;
+                font-weight: 400;
+                font-size: 20px;
+                text-transform: uppercase;
+                color: #1B2A4E;
+                font-family: "Bebas Neue Cyrillic";
+                line-height: 100%;
+                letter-spacing: 0;
+            }
+        }
+    }
+    &__info{
+        &-item{
+            font-weight: 400;
+            font-size: 16px;
+            color: #1B2A4E;
+            font-family: "Rubik";
+            line-height: 100%;
+            letter-spacing: 0;   
+        }
+    }
+}
