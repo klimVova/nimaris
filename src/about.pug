@@ -2,12 +2,11 @@ doctype html
 html(lang="en")
   head
     link(rel="stylesheet", href="./assets/scss/main.scss")
-    title About Us
+    title Home
   body
-    h1 Abaout Us Page
-    a(href="./index.pug") Go to Home page
-    a(href="./contact.pug") Go to Contact page
-    p.
-      Pug is a terse and simple templating language with a
-      strong focus on performance and powerful features.
-    script(type="module", src="./assets/js/main.js")
+    .wrapper
+      include  ./assets/components/header.pug
+      .content
+       include  ./assets/components/main_about.pug
+      include  ./assets/components/footer.pug
+      script(type="module", src="./assets/js/main.js")

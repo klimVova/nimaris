@@ -1,0 +1,41 @@
+@font-face { 
+    font-family: "Rubik"; 
+    src: url("/src/assets/fonts/Rubik.ttf") format("truetype"); 
+  } 
+.footer{
+    background-color: #1B2A4E;
+    text-align: center;
+    &__logo{
+        padding: 32px 0 12px 0;
+    }
+    &__content{
+       
+        display: flex;
+        justify-content: center;
+        p{
+            width: 430px;
+            color:#fff;
+            font-size: 12px;
+            font-weight: 3300;
+        }
+    }
+    &__link{
+        a{
+            padding:27px 0 12px 0;
+            color:#fff;
+            font-weight: 400;
+            font-size: 14px;
+            font-family: "Rubik";
+            text-decoration: underline;
+        }
+    }
+    &__copy{
+        color:#fff;
+        font-size: 12px;
+        font-weight: 3300;
+        p{
+            margin: 0;
+            padding-bottom:24px;
+        }
+    }
+}   

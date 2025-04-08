@@ -1,14 +1,24 @@
 @font-face { 
     font-family: "Bebas Neue"; 
     src: url("/src/assets/fonts/Bebas_Neue.ttf") format("truetype"); 
-  } 
+} 
   @font-face { 
     font-family: "Geometria"; 
     src: url("/src/assets/fonts/geometria_light.otf") format("truetype"); 
-  } 
+} 
+@font-face { 
+    font-family: "Bebas Neue Cyrillic"; 
+    src: url("/src/assets/fonts/Bebas_Neue_Cyrillic.ttf") format("truetype"); 
+}
 .bg-image{
     width: 100%;
     position: relative;
+}
+.container{
+    &__main{
+        width: 1140px;
+        padding-top:50px;  
+    }
 }
 .main{
     position: relative;
@@ -44,7 +54,62 @@
             p{
                 width: 100%;
                 max-width: 1000px;
-            } 
+        } 
+    }
+    &__subtitle{
+        display:flex;
+        justify-content: center;
+        font-family: "Bebas Neue Cyrillic";
+        font-size:36px;
+        color:#1B2A4E;
+        text-transform: uppercase;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-bottom: 28px;
+    }
+    &__block{
+        padding: 0 10px 12px 0;
+        position: relative;
+        img{
+            border-radius:20px;
+            width: 275px;
+            height: 185px;
         }
+        &-text{
+            position: absolute;
+            top: 72px;
+            left: 23px;
+            font-weight: 700;
+            font-size: 16px;
+            color:#fff;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            width: 235px;
+        }
+    }
+    &__item{
+        padding-right: 63px;
+        text-align: center;
+        img{
+            padding-bottom: 20px;
+        }
+        &-title{
+            font-family: "Bebas Neue";
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+            text-align: center;
+            text-transform: uppercase;
+            padding-bottom: 12px;
+        }
+        &-content{
+            width: 227px;
+            text-align: center;
+            font-weight: 300;
+            font-size: 16px;
+            color:#1B2A4E;    
+        }    
+    }
 }
-    

@@ -1,0 +1,70 @@
+@font-face { 
+    font-family: "Bebas Neue"; 
+    src: url("/src/assets/fonts/Bebas_Neue.ttf") format("truetype"); 
+} 
+  @font-face { 
+    font-family: "Geometria"; 
+    src: url("/src/assets/fonts/geometria_light.otf") format("truetype"); 
+} 
+@font-face { 
+    font-family: "Bebas Neue Cyrillic"; 
+    src: url("/src/assets/fonts/Bebas_Neue_Cyrillic.ttf") format("truetype"); 
+}
+.bg-image{
+    width: 100%;
+    position: relative;
+}
+.container{
+    &__about{
+        width: 780px;
+        padding-top:50px;
+        &-block{
+            padding-top: 20px;
+            background: #ffffff;
+            width: 780px;
+            border-radius:20px;
+        } 
+        &-item{
+            padding-top: 20px;
+            width: 780px;
+        } 
+    }
+}
+.about{
+    position: relative;
+    &__subtitle{
+        display:flex;
+        justify-content: center;
+        font-family: "Bebas Neue Cyrillic";
+        font-size:36px;
+        color:#1B2A4E;
+        text-transform: uppercase;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-bottom: 28px;
+        &-item{
+            display:flex;
+            justify-content: center;
+            font-family: "Bebas Neue";
+            font-weight: 700;
+            font-size:20px;
+            color:#1B2A4E;
+            text-transform: uppercase;
+            line-height: 100%;
+            letter-spacing: 0%;
+            padding-bottom: 12px;
+            padding-top:30px;
+        }
+    }
+    &__description{
+        p{
+            font-weight: 300;
+            font-size: 16px;
+            text-align: center;
+            color: #1B2A4E;
+        }
+        &-item{
+            padding-bottom:40px;
+        }
+    }
+}

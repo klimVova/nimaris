@@ -4,6 +4,9 @@ html(lang="en")
     link(rel="stylesheet", href="./assets/scss/main.scss")
     title Home
   body
-    include  ./assets/components/header.pug
-    include  ./assets/components/main_index.pug
-    script(type="module", src="./assets/js/main.js")
+    .wrapper
+      include  ./assets/components/header.pug
+      .content
+        include  ./assets/components/main_index.pug
+      include  ./assets/components/footer.pug
+      script(type="module", src="./assets/js/main.js")
