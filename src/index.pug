@@ -1,6 +1,7 @@
 doctype html
 html(lang="en")
   head
+    meta(name="viewport",content="width=device-width, initial-scale=1")
     link(rel="stylesheet", href="./assets/scss/main.scss")
     title Home
   body
@@ -10,3 +11,5 @@ html(lang="en")
         include  ./assets/components/main_index.pug
       include  ./assets/components/footer.pug
       script(type="module", src="./assets/js/main.js")
+      script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js")
+      script(type="module", src="./assets/js/phone.js")

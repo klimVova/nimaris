@@ -6,9 +6,16 @@
     font-family: "Rubik"; 
     src: url("/src/assets/fonts/Rubik.ttf") format("truetype"); 
   } 
-.header{
+.container__header{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    width: 1140px;
+}  
+.header{
+    display: flex;
+    justify-content: center;
     padding-top: 16px;
     align-items: center;
     background-color: #fff;
@@ -41,3 +48,69 @@
         }
     }
 }
+.header {
+	position: relative;
+}
+.menu-triger {
+	background: url(/src/assets/images/menu.png) 0 0 repeat;
+	display: block;
+	width: 25px;
+	height:28px;
+	position: absolute;
+	right: 15px;
+	top: 28px;
+}	
+.menu-close {
+	background: url(https://snipp.ru/demo/449/close.png) 0 0 repeat;
+	display: block;
+	width: 28px;
+	height: 28px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 100;
+}
+.menu-popup {
+	background: #2c2e3e;
+	display: none;
+	position: absolute;
+	right: -110%;
+	top: 0;
+	width: 100%;
+    height: 100vh;
+	box-sizing: border-box;
+	padding: 30px;
+	z-index: 9999;	
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.menu-popup ul {
+	margin: 0;
+	padding: 0;
+}
+.menu-popup li {
+	list-style: none;
+	margin: 10px 0;
+	padding: 0;
+}
+.menu-popup li a {
+	font-size: 18px;
+	font-family: "Arial";
+	color: rgb(255, 255, 255);
+	line-height: 1.4;	
+	text-decoration: none;
+}
+.body_pointer * {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation__menu,.navigation__info{
+      display: none;
+    }
+  
+  }
+  @media only screen and (min-width: 600px) {
+    .menu-triger{
+        display: none;
+    }
+  }

@@ -16,7 +16,8 @@
 }
 .container{
     &__main{
-        width: 1140px;
+        width: 100%;
+        max-width: 1140px;
         padding-top:50px;  
     }
 }

@@ -97,7 +97,6 @@ legend {
     display: flex;
     flex-direction: column;
     height: 100%;
-	  
   }
   .content {
     flex: 1 0 auto;
@@ -108,7 +107,40 @@ legend {
   }
   .stiky{
       position: sticky;
-      bottom: 0;
-      left: 0;
+      inset: 100px 100px 20px 100px;
       float: inline-end;
+      margin-bottom: 10px;
   }
+  .lang__mode{
+  order: 1;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+  height: 36px;
+  background-color: #f6f6f6;
+  border-radius: 50px;
+  border:1px solid #303136;
+  &::before{
+      content: " ";
+      position: absolute;
+      left:0;
+      width: 54px;
+      height: 34px;
+      border-radius: 50px 0 0 50px;
+      background-color: #1b2a4e;
+      transition: left 0.3s ease-in;
+  }
+  &__item{
+      position: relative;
+      padding: 5px 15px 5px 15px;
+      color: #fff;
+  }
+  &--active::before{
+      left: 56px;
+      border-radius:0 50px 50px 0;
+  }
+}
+.color{
+  color: #303136;
+}
