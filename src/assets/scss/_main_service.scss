@@ -1,0 +1,113 @@
+@font-face { 
+    font-family: "Bebas Neue"; 
+    src: url("/src/assets/fonts/Bebas_Neue.ttf") format("truetype"); 
+} 
+  @font-face { 
+    font-family: "Geometria"; 
+    src: url("/src/assets/fonts/geometria_light.otf") format("truetype"); 
+} 
+@font-face { 
+    font-family: "Bebas Neue Cyrillic"; 
+    src: url("/src/assets/fonts/Bebas_Neue_Cyrillic.ttf") format("truetype"); 
+}
+
+.container{
+    &__service{
+        width: 780px;
+        padding-top:50px;
+    }
+}
+.service{
+    position: relative;
+    &__subtitle{
+        display:flex;
+        justify-content: center;
+        font-family: "Bebas Neue Cyrillic";
+        font-size:36px;
+        color:#1B2A4E;
+        text-transform: uppercase;
+        line-height: 100%;
+        letter-spacing: 0%;
+        padding-bottom: 28px;
+    }
+    &__block{
+            width: 780px;
+            background: #fff;
+            padding: 30px 0 20px 0;
+            margin-top: 20px;
+            border-radius: 20px;
+            position: relative;
+        &-title{
+            display: flex;
+            justify-content: center;
+            font-family: "Bebas Neue";
+            font-weight: 700;
+            font-size:20px;
+            line-height: 100%;
+            letter-spacing: 0%;
+        }
+        &-content{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        &-items{
+            width: 670px;
+            display: flex;
+        }
+        &-desc{
+            width: 670px;
+            display: block;
+            margin: 20px 60px;
+            p{
+                text-align: center;
+                line-height: 100%;
+                letter-spacing: 0%;
+                font-size:16px;
+            }
+        }
+        &-itemRight{
+            display:flex;
+            p{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-left: 24px;
+                width: 100%;
+                max-width: 370px;
+                font-size: 16px;
+                line-height: 100%;
+                letter-spacing: 0%;
+            }    
+        }
+        &-last{
+            margin-bottom: 40px;
+        }
+    }
+}
+.line{
+    &:after {
+        content: '';
+        display: block;
+        height: 1px;
+        width: 100px;
+        background: #F6F6F6;
+        width: 100%;
+        margin-top: 20px;
+    }
+    &:last-child{
+        &:after {
+            content: '';
+            display: none;
+            height: 1px;
+            width: 100px;
+            background: #F6F6F6;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+}
+.block{
+    width: 670px;
+    margin: 20px 60px;
+}

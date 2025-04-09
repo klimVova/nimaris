@@ -101,7 +101,14 @@ legend {
   }
   .content {
     flex: 1 0 auto;
+    
   }
   .footer {
     flex: 0 0 auto;
+  }
+  .stiky{
+      position: sticky;
+      bottom: 0;
+      left: 0;
+      float: inline-end;
   }
