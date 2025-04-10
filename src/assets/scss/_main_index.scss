@@ -14,10 +14,12 @@
     width: 100%;
     position: relative;
 }
+.wrapper{
+    background-color: #f6f6f6;
+}
 .container{
     &__main{
-        width: 100%;
-        max-width: 1140px;
+        width: 1140px;
         padding-top:50px;  
     }
 }
@@ -36,22 +38,21 @@
         font-family: "Bebas Neue";
         line-height: 100%;
         letter-spacing: 0;
+
         h1{
             width: 100%;
-            max-width: 930px;  
+            max-width: 1080px; 
         }
     }
     &__description{
-            position: absolute;
-            top:70%;
-            left:50%;
-            transform:translate(-50%, -50%);
+            margin-top:25px;
             color: #fff;
             text-align: center;
             font-weight: 300;
             font-size: 16px;
             line-height: 100%;
             letter-spacing: 0;
+            text-transform: none;
             p{
                 width: 100%;
                 max-width: 1000px;
