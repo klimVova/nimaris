@@ -67,4 +67,21 @@
             padding-bottom:40px;
         }
     }
+    &__descriptions{
+        position: absolute;
+        top:70%;
+        left: 25%;
+        margin-top:25px;
+        color: #fff;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0;
+        text-transform: none;
+        p{
+            width: 1000px;
+            max-width: 100%;
+    } 
+}
 }
